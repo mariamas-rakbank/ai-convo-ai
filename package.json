@@ -1,0 +1,16 @@
+{
+  "name": "conversationalai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariam A",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.2.8",
+    "cypress": "^14.3.2",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
