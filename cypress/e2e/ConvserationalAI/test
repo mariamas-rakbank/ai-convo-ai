@@ -1,0 +1,641 @@
+{
+    "answer": {
+        "content": [
+            {
+                "type": "text",
+                "values": [
+                    "Welcome to RAKBANK Digital Banking. How may I assist you today?"
+                ]
+            }
+        ]
+    },
+    "session_attributes": {
+        "question": "hellooo !!",
+        "cif": "00001",
+        "conversation_id": "6656ee01-93f9-486c-b312-cb8a783cc39d",
+        "language": "en",
+        "request_in_time": "2025-04-30T06:28:43.804584+00:00",
+        "previous_context": "## Retrieved Website FAQs from IMMUTABLE DATABASE\n\n<faqs>\n    <faq id='1'>Question: View Supplementary credit card combined available credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='2'>Question: View Supplementary credit card combined credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='3'>Question: View Supplementary credit card combined cash limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='4'>Question: Service Request status\n\nAnswer: To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.</faq>\n    <faq id='5'>Question: Change App Language\n\nAnswer: To change the app language, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Change App Language\"\n\nThis will allow you to choose a different language for the app.</faq>\n</faqs>\n\n----\n\n## Retrieved Intents from IMMUTABLE DATABASE\n\n<intents>\n    <deeplink id='blockCreditCard'>Block your credit card</deeplink>\n    <deeplink id='contactUs'>Get in touch with us</deeplink>\n    <deeplink id='composeEmail'>Compose a new email</deeplink>\n    <deeplink id='applyForAccount'>Apply for a new account</deeplink>\n    <deeplink id='cancelCard'>Cancel or close your credit card</deeplink>\n</intents>\n\n## User Question \n<question>hello !</question>",
+        "next_response_codes": [],
+        "fallback_attempt": 0,
+        "intent_top_30": [
+            {
+                "intent_id": "blockCreditCard",
+                "intent_desc": "Block your credit card",
+                "deeplink": "AUTH_BLOCK_CREDIT_CRD",
+                "category": "CREDIT_CARDS",
+                "language": "en",
+                "utterance": "hi, i need to block my card right away!",
+                "similarity": 0.8007947895980342
+            },
+            {
+                "intent_id": "contactUs",
+                "intent_desc": "Get in touch with us",
+                "deeplink": "AUTH_SR_CONTACT_US",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "how can i contact you?",
+                "similarity": 0.7953490774478815
+            },
+            {
+                "intent_id": "viewAccountNetAvailableBalance",
+                "intent_desc": "View your available balance",
+                "deeplink": "AUTH_ACC_AVAIL_BAL",
+                "category": "Accounts",
+                "language": "en",
+                "utterance": "balance check, please.",
+                "similarity": 0.7916328489872582
+            },
+            {
+                "intent_id": "cancelCard",
+                "intent_desc": "Cancel or close your credit card",
+                "deeplink": "",
+                "category": "",
+                "language": "en",
+                "utterance": "Hey, I'm looking to cancel my card today.",
+                "similarity": 0.7866834905943982
+            },
+            {
+                "intent_id": "updatePersonalDetails",
+                "intent_desc": "View or update your personal information",
+                "deeplink": "AUTH_UPDATE_DETAILS",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "help me look at my personal info.",
+                "similarity": 0.7855834141202478
+            },
+            {
+                "intent_id": "reportFraud",
+                "intent_desc": "Report fraud",
+                "deeplink": "",
+                "category": "",
+                "language": "en",
+                "utterance": "Help! Someone's using my card without permission!",
+                "similarity": 0.7846827329464234
+            },
+            {
+                "intent_id": "applyForAccount",
+                "intent_desc": "Apply for a new account",
+                "deeplink": "AUTH_APPLY_OPR_ACCOUNTS",
+                "category": "ACCOUNTS",
+                "language": "en",
+                "utterance": "i wish to sign up for a new account.",
+                "similarity": 0.7814237441580132
+            },
+            {
+                "intent_id": "updateCommunicationPreferences",
+                "intent_desc": "Manage your communication preferences",
+                "deeplink": "AUTH_SETTINGS_UPDATE_PREFERENCE",
+                "category": "SETTINGS",
+                "language": "en",
+                "utterance": "i wish to change my contact methods.",
+                "similarity": 0.7802227405410022
+            },
+            {
+                "intent_id": "composeEmail",
+                "intent_desc": "Compose a new email",
+                "deeplink": "AUTH_INBOX_COMPOSE",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "i'd like to send a new email",
+                "similarity": 0.7800461441671349
+            },
+            {
+                "intent_id": "applyLoan",
+                "intent_desc": "Apply for a loan",
+                "deeplink": "AUTH_APPLY_LOANS",
+                "category": "LOANS_FINANCES",
+                "language": "en",
+                "utterance": "i want to apply for a loan.",
+                "similarity": 0.7778149590118693
+            },
+            {
+                "intent_id": "requestDemandDraftManagersCheque",
+                "intent_desc": "Request a demand draft or a managers cheque",
+                "deeplink": "AUTH_SR_ACC_DDMQ",
+                "category": "ACCOUNTS",
+                "language": "en",
+                "utterance": "i need a manager's cheque, please.",
+                "similarity": 0.7759763942096038
+            },
+            {
+                "intent_id": "viewAccountBranch",
+                "intent_desc": "View your account details",
+                "deeplink": "AUTH_ACC_BRANCH",
+                "category": "Accounts",
+                "language": "en",
+                "utterance": "let me check my account details.",
+                "similarity": 0.7745296506432782
+            },
+            {
+                "intent_id": "viewAvailableDeals",
+                "intent_desc": "Explore offers just for you",
+                "deeplink": "AUTH_DEALS",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "i'd like to see my exclusive deals",
+                "similarity": 0.7736517663676912
+            },
+            {
+                "intent_id": "estatementModification",
+                "intent_desc": "Get my statement by email",
+                "deeplink": "AUTH_SR_GENERAL_ESTATEMENT",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "i'd like my statement sent to my email, please.",
+                "similarity": 0.7734976504178399
+            },
+            {
+                "intent_id": "applyForChequeBook",
+                "intent_desc": "Request a cheque book",
+                "deeplink": "AUTH_SR_CHQ_REQ",
+                "category": "ACCOUNTS",
+                "language": "en",
+                "utterance": "i want to request a cheque book.",
+                "similarity": 0.7731256544973881
+            },
+            {
+                "intent_id": "requestAccountDuplicateStatement",
+                "intent_desc": "Get a duplicate statement",
+                "deeplink": "AUTH_SR_DUPLICATE_STATEMENT",
+                "category": "ACCOUNTS",
+                "language": "en",
+                "utterance": "i'd like to get a reprint of my statement, please.",
+                "similarity": 0.7731015617680496
+            }
+        ],
+        "intent_reranked_5": [],
+        "intent_rag_result": [
+            {
+                "intent_id": "blockCreditCard",
+                "intent_desc": "Block your credit card",
+                "deeplink": "AUTH_BLOCK_CREDIT_CRD",
+                "category": "CREDIT_CARDS",
+                "language": "en",
+                "utterance": "hi, i need to block my card right away!",
+                "similarity": 0.8007947895980342,
+                "bm25_score": null
+            },
+            {
+                "intent_id": "contactUs",
+                "intent_desc": "Get in touch with us",
+                "deeplink": "AUTH_SR_CONTACT_US",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "how can i contact you?",
+                "similarity": 0.7953490774478815,
+                "bm25_score": null
+            },
+            {
+                "intent_id": "viewAccountNetAvailableBalance",
+                "intent_desc": "View your available balance",
+                "deeplink": "AUTH_ACC_AVAIL_BAL",
+                "category": "Accounts",
+                "language": "en",
+                "utterance": "balance check, please.",
+                "similarity": 0.7916328489872582,
+                "bm25_score": null
+            },
+            {
+                "intent_id": "cancelCard",
+                "intent_desc": "Cancel or close your credit card",
+                "deeplink": "",
+                "category": "",
+                "language": "en",
+                "utterance": "Hey, I'm looking to cancel my card today.",
+                "similarity": 0.7866834905943982,
+                "bm25_score": null
+            },
+            {
+                "intent_id": "updatePersonalDetails",
+                "intent_desc": "View or update your personal information",
+                "deeplink": "AUTH_UPDATE_DETAILS",
+                "category": "GENERAL_REQUESTS",
+                "language": "en",
+                "utterance": "help me look at my personal info.",
+                "similarity": 0.7855834141202478,
+                "bm25_score": null
+            }
+        ],
+        "services_30": [
+            {
+                "question": "View Supplementary credit card combined available credit limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined available credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7353091342286022
+            },
+            {
+                "question": "View Supplementary credit card combined credit limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7348173711705532
+            },
+            {
+                "question": "View Supplementary credit card combined cash limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined cash limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7332094225425878
+            },
+            {
+                "question": "Service Request status",
+                "answer": "To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.",
+                "sentence": "Question: Service Request status\n\nAnswer: To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> History",
+                "similarity": 0.725484549996359
+            },
+            {
+                "question": "View Loan/Finance outstanding",
+                "answer": "To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.",
+                "sentence": "Question: View Loan/Finance outstanding\n\nAnswer: To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.",
+                "language": "en",
+                "original_answer": "App Home Page -> Goto the Loans & Finances tile",
+                "similarity": 0.7194612249775595
+            },
+            {
+                "question": "Change App Language",
+                "answer": "To change the app language, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Change App Language\"\n\nThis will allow you to choose a different language for the app.",
+                "sentence": "Question: Change App Language\n\nAnswer: To change the app language, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Change App Language\"\n\nThis will allow you to choose a different language for the app.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Settings-> Change App Language",
+                "similarity": 0.7184366165346778
+            },
+            {
+                "question": "Acessibility Setting on Device",
+                "answer": "To access Accessibility Settings on your device, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Accessibility Settings\" on your device\n\nThis will open the accessibility settings where you can make necessary adjustments.",
+                "sentence": "Question: Acessibility Setting on Device\n\nAnswer: To access Accessibility Settings on your device, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Accessibility Settings\" on your device\n\nThis will open the accessibility settings where you can make necessary adjustments.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Settings->Accessibility Settings on Device",
+                "similarity": 0.7165466613385033
+            },
+            {
+                "question": "Customise Overview",
+                "answer": "To customize the overview, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Customise Overview\"\n\nThis will allow you to customize your overview settings.",
+                "sentence": "Question: Customise Overview\n\nAnswer: To customize the overview, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Go to Settings\n4. Select \"Customise Overview\"\n\nThis will allow you to customize your overview settings.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Settings-> Customise Overview",
+                "similarity": 0.7154371105823214
+            },
+            {
+                "question": "View deposit Details",
+                "answer": "To view deposit details, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Deposits tile\n\nThis will take you to a screen where you can see the details of your deposits.",
+                "sentence": "Question: View deposit Details\n\nAnswer: To view deposit details, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Deposits tile\n\nThis will take you to a screen where you can see the details of your deposits.",
+                "language": "en",
+                "original_answer": "App Home Page -> Goto the Deposits tile",
+                "similarity": 0.7149222819476863
+            },
+            {
+                "question": "View Loan/Finance transactions",
+                "answer": "To view Loan/Finance transactions, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loans & Finances tile\n\nThis will take you to a screen where you can see your Loan/Finance transactions.",
+                "sentence": "Question: View Loan/Finance transactions\n\nAnswer: To view Loan/Finance transactions, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loans & Finances tile\n\nThis will take you to a screen where you can see your Loan/Finance transactions.",
+                "language": "en",
+                "original_answer": "App Home Page -> Click on Loans & Finances tile",
+                "similarity": 0.7105432331573378
+            },
+            {
+                "question": "View investment details",
+                "answer": "To view investment details, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Investments tile\n\nThis will show you the details of your investments.",
+                "sentence": "Question: View investment details\n\nAnswer: To view investment details, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Investments tile\n\nThis will show you the details of your investments.",
+                "language": "en",
+                "original_answer": "App Home Page -> Goto the Investments tile",
+                "similarity": 0.7096740659451184
+            },
+            {
+                "question": "View Gold Buy & Sell rate",
+                "answer": "To view gold buy and sell rates, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Gold account tile\n\nThis will take you to a screen where you can see the current gold buy and sell rates.",
+                "sentence": "Question: View Gold Buy & Sell rate\n\nAnswer: To view gold buy and sell rates, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Gold account tile\n\nThis will take you to a screen where you can see the current gold buy and sell rates.",
+                "language": "en",
+                "original_answer": "App Home Page -> Click on Gold account tile",
+                "similarity": 0.7091133633440593
+            },
+            {
+                "question": "View Scheduled funds international transfers",
+                "answer": "To view scheduled funds for international transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Select \"International Transfers\"\n6. Select \"Scheduled\"\n\nThis will show you the details of your scheduled international fund transfers.",
+                "sentence": "Question: View Scheduled funds international transfers\n\nAnswer: To view scheduled funds for international transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Select \"International Transfers\"\n6. Select \"Scheduled\"\n\nThis will show you the details of your scheduled international fund transfers.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history ->Send Money -> International Transfers-> Scheduled ",
+                "similarity": 0.7084175547196008
+            },
+            {
+                "question": "View Loan/Finance disbursed amount",
+                "answer": "To view the Loan/Finance disbursed amount, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display the disbursed amount for your loans or finances.",
+                "sentence": "Question: View Loan/Finance disbursed amount\n\nAnswer: To view the Loan/Finance disbursed amount, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display the disbursed amount for your loans or finances.",
+                "language": "en",
+                "original_answer": "App Home Page -> Goto the Loans & Finances tile",
+                "similarity": 0.7079408907636963
+            },
+            {
+                "question": "Stop Scheduled transaction",
+                "answer": "To stop a scheduled transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose the respective transaction category\n5. Select \"Scheduled\"\n6. Select the transaction\n7. Click on \"Stop\"\n\nThis will stop the selected scheduled transaction.",
+                "sentence": "Question: Stop Scheduled transaction\n\nAnswer: To stop a scheduled transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose the respective transaction category\n5. Select \"Scheduled\"\n6. Select the transaction\n7. Click on \"Stop\"\n\nThis will stop the selected scheduled transaction.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history ->  select the respective transaction category -> Scheduled -> select the transaction -> Stop",
+                "similarity": 0.7067293392712962
+            },
+            {
+                "question": "View Loan/Finance Overdue amount",
+                "answer": "To view the Loan/Finance Overdue amount, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loans & Finances tile\n3. Select \"Details\"\n\nThis will display the overdue amount for your loans or finances.",
+                "sentence": "Question: View Loan/Finance Overdue amount\n\nAnswer: To view the Loan/Finance Overdue amount, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loans & Finances tile\n3. Select \"Details\"\n\nThis will display the overdue amount for your loans or finances.",
+                "language": "en",
+                "original_answer": "App Home Page -> Click on Loans & Finances tile -> Details",
+                "similarity": 0.7053370466414438
+            },
+            {
+                "question": "Mobile Cash-Cancel",
+                "answer": "To cancel a Mobile Cash transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Select \"MobileCash\"\n6. Select the transaction you want to cancel\n7. Click on \"Cancel payment\"\n\nThis will cancel the selected Mobile Cash transaction.",
+                "sentence": "Question: Mobile Cash-Cancel\n\nAnswer: To cancel a Mobile Cash transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Select \"MobileCash\"\n6. Select the transaction you want to cancel\n7. Click on \"Cancel payment\"\n\nThis will cancel the selected Mobile Cash transaction.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history -> Send Money-> MobileCash ->select the transaction -> Cancel payment",
+                "similarity": 0.7049216538263741
+            },
+            {
+                "question": "Amend Maturity Instruction",
+                "answer": "To amend maturity instruction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Amend Maturity Instruction\"\n\nThis will allow you to make changes to your maturity instructions.",
+                "sentence": "Question: Amend Maturity Instruction\n\nAnswer: To amend maturity instruction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Amend Maturity Instruction\"\n\nThis will allow you to make changes to your maturity instructions.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Amend Maturity Instruction",
+                "similarity": 0.702940600706184
+            },
+            {
+                "question": "View Scheduled funds local transfers",
+                "answer": "To view scheduled funds local transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Click on \"Local Transfers\"\n6. Select \"Scheduled\"\n\nThis will show you the list of your scheduled local transfers.",
+                "sentence": "Question: View Scheduled funds local transfers\n\nAnswer: To view scheduled funds local transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Send Money\"\n5. Click on \"Local Transfers\"\n6. Select \"Scheduled\"\n\nThis will show you the list of your scheduled local transfers.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history ->Send Money -> Local Transfers ->Scheduled ",
+                "similarity": 0.7024410996552761
+            },
+            {
+                "question": "View Loan/Finance next installment amount",
+                "answer": "To view Loan/Finance next installment amount, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loan/Finance tile\n3. Select \"Details\"\n\nThis will show you the amount for your next installment.",
+                "sentence": "Question: View Loan/Finance next installment amount\n\nAnswer: To view Loan/Finance next installment amount, you need to:\n\n1. Navigate to the App Home Page\n2. Click on the Loan/Finance tile\n3. Select \"Details\"\n\nThis will show you the amount for your next installment.",
+                "language": "en",
+                "original_answer": "App Home Page -> Click on Loan/Finance tile -> Details",
+                "similarity": 0.7023579898262411
+            },
+            {
+                "question": "Closure of Recurring Deposit",
+                "answer": "To close a Recurring Deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Closure of Recurring Deposit\"\n\nThis will guide you through the process to close your Recurring Deposit.",
+                "sentence": "Question: Closure of Recurring Deposit\n\nAnswer: To close a Recurring Deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Closure of Recurring Deposit\"\n\nThis will guide you through the process to close your Recurring Deposit.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Closure of Recurring Deposit",
+                "similarity": 0.7014343249444523
+            },
+            {
+                "question": "Amend Recurring Deposit",
+                "answer": "To amend a Recurring Deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Go to \"Services\"\n3. Select \"Amend Recurring Deposit\"\n\nThis will take you to the screen where you can amend your recurring deposit details.",
+                "sentence": "Question: Amend Recurring Deposit\n\nAnswer: To amend a Recurring Deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Go to \"Services\"\n3. Select \"Amend Recurring Deposit\"\n\nThis will take you to the screen where you can amend your recurring deposit details.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Amend  Recurring Deposit",
+                "similarity": 0.7004464639259
+            },
+            {
+                "question": "Closure of Term Deposit",
+                "answer": "To close a term deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Closure of Term Deposit\"\n\nThis will guide you through the steps to close your term deposit.",
+                "sentence": "Question: Closure of Term Deposit\n\nAnswer: To close a term deposit, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Closure of Term Deposit\"\n\nThis will guide you through the steps to close your term deposit.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Closure of Term Deposit",
+                "similarity": 0.7000146137579314
+            },
+            {
+                "question": "View Scheduled funds card transfers",
+                "answer": "To view scheduled funds card transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Click on \"Payments\"\n5. Choose \"Card Payments\"\n6. Select \"Scheduled\"\n\nThis will show you the scheduled card transfers.",
+                "sentence": "Question: View Scheduled funds card transfers\n\nAnswer: To view scheduled funds card transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Click on \"Payments\"\n5. Choose \"Card Payments\"\n6. Select \"Scheduled\"\n\nThis will show you the scheduled card transfers.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history -> Payements -> Card Payments-> Scheduled ",
+                "similarity": 0.699901269997408
+            },
+            {
+                "question": "Amend Maturity Instruction-islamic",
+                "answer": "To amend maturity instruction for Islamic accounts, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Amend Maturity Instruction - Islamic\"\n\nThis will allow you to amend the maturity instructions for your Islamic account.",
+                "sentence": "Question: Amend Maturity Instruction-islamic\n\nAnswer: To amend maturity instruction for Islamic accounts, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Services\n3. Select \"Amend Maturity Instruction - Islamic\"\n\nThis will allow you to amend the maturity instructions for your Islamic account.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Amend Maturity Instruction - Islamic",
+                "similarity": 0.6988089044726452
+            },
+            {
+                "question": "Closure of Term Deposit-islamic",
+                "answer": "To close a Term Deposit (Islamic), you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Closure of Term Deposit - Islamic\"\n\nThis will guide you through the process of closing your Islamic Term Deposit.",
+                "sentence": "Question: Closure of Term Deposit-islamic\n\nAnswer: To close a Term Deposit (Islamic), you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Closure of Term Deposit - Islamic\"\n\nThis will guide you through the process of closing your Islamic Term Deposit.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Closure of Term Deposit - Islamic",
+                "similarity": 0.6985147648073031
+            },
+            {
+                "question": "View Scheduled funds bill payment transfers",
+                "answer": "To view scheduled funds bill payment transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Payments\"\n5. Click on \"Bill Payments\"\n6. Select \"Scheduled\"\n\nThis will display the scheduled funds bill payment transfers.",
+                "sentence": "Question: View Scheduled funds bill payment transfers\n\nAnswer: To view scheduled funds bill payment transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Open the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Payments\"\n5. Click on \"Bill Payments\"\n6. Select \"Scheduled\"\n\nThis will display the scheduled funds bill payment transfers.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history -> Payements -> Bill Payments -> Scheduled ",
+                "similarity": 0.6982998287243765
+            },
+            {
+                "question": "Renew Term investment Deposit-Islamic",
+                "answer": "To renew a term investment deposit under Islamic banking, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Amend Recurring Deposit - Islamic\"\n\nThis will allow you to renew your term investment deposit.",
+                "sentence": "Question: Renew Term investment Deposit-Islamic\n\nAnswer: To renew a term investment deposit under Islamic banking, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Choose \"Amend Recurring Deposit - Islamic\"\n\nThis will allow you to renew your term investment deposit.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> Amend  Recurring Deposit - Islamic",
+                "similarity": 0.6981661680486817
+            },
+            {
+                "question": "Modify Scheduled transaction",
+                "answer": "To modify a scheduled transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Menu\n3. Select Transfer & payment history\n4. Choose the respective transaction category\n5. Go to Scheduled\n6. Select the transaction you wish to modify\n7. Choose Modify\n\nThis will allow you to make changes to your scheduled transaction.",
+                "sentence": "Question: Modify Scheduled transaction\n\nAnswer: To modify a scheduled transaction, you need to:\n\n1. Navigate to the App Home Page\n2. Go to Menu\n3. Select Transfer & payment history\n4. Choose the respective transaction category\n5. Go to Scheduled\n6. Select the transaction you wish to modify\n7. Choose Modify\n\nThis will allow you to make changes to your scheduled transaction.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history ->  select the respective transaction category -> Scheduled -> select the transaction -> Modify",
+                "similarity": 0.6977551432308815
+            },
+            {
+                "question": "View Scheduled  gold account transfers",
+                "answer": "To view scheduled gold account transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Other transactions\"\n5. Click on \"Gold Account\"\n6. Select \"Scheduled\"\n\nThis will show you the list of your scheduled gold account transfers.",
+                "sentence": "Question: View Scheduled  gold account transfers\n\nAnswer: To view scheduled gold account transfers, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Menu\n3. Select \"Transfer & payment history\"\n4. Choose \"Other transactions\"\n5. Click on \"Gold Account\"\n6. Select \"Scheduled\"\n\nThis will show you the list of your scheduled gold account transfers.",
+                "language": "en",
+                "original_answer": "App Home Page -> Menu -> Transfer & payment history -> Other transactions ->Gold Account -> Scheduled",
+                "similarity": 0.6973447604150809
+            }
+        ],
+        "services_reranked_5": [],
+        "services_rag_result": [
+            {
+                "question": "View Supplementary credit card combined available credit limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined available credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7353091342286022,
+                "bm25_score": null
+            },
+            {
+                "question": "View Supplementary credit card combined credit limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7348173711705532,
+                "bm25_score": null
+            },
+            {
+                "question": "View Supplementary credit card combined cash limit",
+                "answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "sentence": "Question: View Supplementary credit card combined cash limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "language": "en",
+                "original_answer": "Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?",
+                "similarity": 0.7332094225425878,
+                "bm25_score": null
+            },
+            {
+                "question": "Service Request status",
+                "answer": "To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.",
+                "sentence": "Question: Service Request status\n\nAnswer: To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.",
+                "language": "en",
+                "original_answer": "App Home Page -> Services -> History",
+                "similarity": 0.725484549996359,
+                "bm25_score": null
+            },
+            {
+                "question": "View Loan/Finance outstanding",
+                "answer": "To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.",
+                "sentence": "Question: View Loan/Finance outstanding\n\nAnswer: To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.",
+                "language": "en",
+                "original_answer": "App Home Page -> Goto the Loans & Finances tile",
+                "similarity": 0.7194612249775595,
+                "bm25_score": null
+            }
+        ],
+        "retrieved_intent_format": "<intents>\n    <deeplink id='blockCreditCard'>Block your credit card</deeplink>\n    <deeplink id='contactUs'>Get in touch with us</deeplink>\n    <deeplink id='viewAccountNetAvailableBalance'>View your available balance</deeplink>\n    <deeplink id='cancelCard'>Cancel or close your credit card</deeplink>\n    <deeplink id='updatePersonalDetails'>View or update your personal information</deeplink>\n</intents>",
+        "retrieved_services_format": "<faqs>\n    <faq id='1'>Question: View Supplementary credit card combined available credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='2'>Question: View Supplementary credit card combined credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='3'>Question: View Supplementary credit card combined cash limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='4'>Question: Service Request status\n\nAnswer: To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.</faq>\n    <faq id='5'>Question: View Loan/Finance outstanding\n\nAnswer: To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.</faq>\n</faqs>",
+        "context": "## Retrieved Website FAQs from IMMUTABLE DATABASE\n\n<faqs>\n    <faq id='1'>Question: View Supplementary credit card combined available credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='2'>Question: View Supplementary credit card combined credit limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='3'>Question: View Supplementary credit card combined cash limit\n\nAnswer: Unfortunately, I cannot help you with this now and this requires in person assistance at one of our branches. Please visit your nearest RAKBANK branch to proceed. Is there anything else I can help you with?</faq>\n    <faq id='4'>Question: Service Request status\n\nAnswer: To check the status of your service request, you need to:\n\n1. Navigate to the App Home Page\n2. Select \"Services\"\n3. Go to \"History\"\n\nThis will provide you with the status of your service request.</faq>\n    <faq id='5'>Question: View Loan/Finance outstanding\n\nAnswer: To view Loan/Finance outstanding, you need to:\n\n1. Navigate to the App Home Page\n2. Go to the Loans & Finances tile\n\nThis will display your outstanding loan or finance amounts.</faq>\n</faqs>\n\n----\n\n## Retrieved Intents from IMMUTABLE DATABASE\n\n<intents>\n    <deeplink id='blockCreditCard'>Block your credit card</deeplink>\n    <deeplink id='contactUs'>Get in touch with us</deeplink>\n    <deeplink id='viewAccountNetAvailableBalance'>View your available balance</deeplink>\n    <deeplink id='cancelCard'>Cancel or close your credit card</deeplink>\n    <deeplink id='updatePersonalDetails'>View or update your personal information</deeplink>\n</intents>\n\n## User Question \n<question>hellooo !!</question>",
+        "tools_available": [
+            "SmallTalkMenu",
+            "FallbackMenu",
+            "AmbiquityAnswer",
+            "DeepLinkAnswer",
+            "FAQAnswer"
+        ],
+        "tool_name": "SmallTalkMenu",
+        "tool_args": {
+            "reason": "The user is greeting with a casual hello.",
+            "customer_facing_answer": "Welcome to RAKBANK Digital Banking. How may I assist you today?"
+        },
+        "llm_response": {
+            "content": "",
+            "additional_kwargs": {
+                "tool_calls": [
+                    {
+                        "id": "call_39n789sgjJ2rZMQJ2CC4LSiA",
+                        "function": {
+                            "arguments": "{\"reason\":\"The user is greeting with a casual hello.\",\"customer_facing_answer\":\"Welcome to RAKBANK Digital Banking. How may I assist you today?\"}",
+                            "name": "SmallTalkMenu"
+                        },
+                        "type": "function"
+                    }
+                ],
+                "refusal": null
+            },
+            "response_metadata": {
+                "token_usage": {
+                    "completion_tokens": 44,
+                    "prompt_tokens": 3413,
+                    "total_tokens": 3457,
+                    "completion_tokens_details": {
+                        "accepted_prediction_tokens": 0,
+                        "audio_tokens": 0,
+                        "reasoning_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    },
+                    "prompt_tokens_details": {
+                        "audio_tokens": 0,
+                        "cached_tokens": 0
+                    }
+                },
+                "model_name": "gpt-4o-2024-05-13",
+                "system_fingerprint": "fp_65792305e4",
+                "prompt_filter_results": [
+                    {
+                        "prompt_index": 0,
+                        "content_filter_results": {
+                            "hate": {
+                                "filtered": false,
+                                "severity": "safe"
+                            },
+                            "jailbreak": {
+                                "filtered": false,
+                                "detected": false
+                            },
+                            "self_harm": {
+                                "filtered": false,
+                                "severity": "safe"
+                            },
+                            "sexual": {
+                                "filtered": false,
+                                "severity": "safe"
+                            },
+                            "violence": {
+                                "filtered": false,
+                                "severity": "safe"
+                            }
+                        }
+                    }
+                ],
+                "finish_reason": "tool_calls",
+                "logprobs": null,
+                "content_filter_results": {}
+            },
+            "type": "ai",
+            "name": null,
+            "id": "run-2144697c-469e-49d2-bf2a-10bc6ae2a767-0",
+            "example": false,
+            "tool_calls": [
+                {
+                    "name": "SmallTalkMenu",
+                    "args": {
+                        "reason": "The user is greeting with a casual hello.",
+                        "customer_facing_answer": "Welcome to RAKBANK Digital Banking. How may I assist you today?"
+                    },
+                    "id": "call_39n789sgjJ2rZMQJ2CC4LSiA",
+                    "type": "tool_call"
+                }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+                "input_tokens": 3413,
+                "output_tokens": 44,
+                "total_tokens": 3457,
+                "input_token_details": {
+                    "audio": 0,
+                    "cache_read": 0
+                },
+                "output_token_details": {
+                    "audio": 0,
+                    "reasoning": 0
+                }
+            }
+        },
+        "response_code": "SmallTalkMenu",
+        "intent_name": "BasicConversation",
+        "reason": "The user is greeting with a casual hello.",
+        "request_out_time": "2025-04-30T06:28:48.799201+00:00",
+        "response_time": 4.994617,
+        "answer": {
+            "content": [
+                {
+                    "type": "text",
+                    "values": [
+                        "Welcome to RAKBANK Digital Banking. How may I assist you today?"
+                    ]
+                }
+            ]
+        },
+        "past_messages": [
+            "hello !",
+            "Answer: Welcome to RAKBANK Digital Banking. How may I help you today?\n\n",
+            "hellooo !!"
+        ],
+        "message_id": "b3a996ac-cc93-494d-b6ec-2e7313df5eaa"
+    }
+}
